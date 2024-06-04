@@ -1,0 +1,198 @@
+.container {
+    background-color: rgb(255, 255, 255);
+    height: 570px;
+    width: 650px;
+    padding: 3rem;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.mainContainer {
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    /* justify-content: space-between; */
+}
+
+.sliderChip {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 13px;
+    margin-right: 10px;
+}
+
+.sliderChip div,
+.btnadd {
+    height: 60px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px 0px #0000001A;
+}
+
+.sliderChip button {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+    top: -9px;
+    right: -3px;
+    width: 22px;
+}
+
+.btnadd {
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.submitBtn {
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    padding: 0.7rem 2.3rem;
+    border-radius: 20px;
+    background: #FF7373;
+    letter-spacing: 1px;
+    cursor: pointer;
+    opacity: 0.9;
+    font-weight: 600;
+}
+
+.submitBtn:hover {
+    opacity: 1;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.closeModal {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid red;
+    width: 24px;
+    color: red;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    top: 33px;
+    right: 49px;
+}
+
+.mediaP {
+    display: none;
+}
+
+.errMessage {
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        display: flex;
+        gap: 12px;
+        align-items: baseline;
+        justify-content: flex-start;
+        height: 508px;
+        width: 86%;
+        padding: 10px;
+    }
+
+    .closeModal {
+        width: 18px;
+        font-size: 12px;
+        top: 16px;
+        right: 22px;
+    }
+
+    .sliderContainer {
+        align-items: baseline;
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        margin-top: 0px;
+    }
+
+    .sliderChip {
+        margin-right: 0;
+    }
+
+    .sliderChip div,
+    .btnadd {
+        height: 50px;
+        width: 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    .sliderChip button {
+        font-size: 10px;
+        width: 14px;
+    }
+
+    .btns {
+        position: absolute;
+        flex-direction: column-reverse;
+        gap: 3.5rem;
+        bottom: 0.5rem;
+        margin-top: 0;
+        width: 95%;
+    }
+
+    .btns div {
+        display: flex;
+        justify-content: space-between;
+        width: 97%;
+    }
+
+    .submitBtn {
+        padding: 0.4rem 1.2rem;
+    }
+
+    .mediaP {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 2.3rem;
+        font-weight: bolder;
+        font-size: 1.3rem;
+    }
+
+    .errMessage {
+        position: absolute;
+        bottom: 4rem;
+        left: 4rem;
+    }
+}

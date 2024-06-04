@@ -1,0 +1,160 @@
+.container {
+    position: relative;
+    box-shadow: 0px 4px 40px 0px #D9D9D94D;
+    border-radius: 15px;
+    /* overflow: hidden; */
+}
+
+.maincontainer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: #000000E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.carouselContainer {
+    display: flex;
+    height: 35rem;
+    width: 20rem;
+    overflow: hidden;
+    transition: all 0.4s;
+    border-radius: 15px;
+}
+
+.carousel {
+    height: 35rem;
+    width: 20rem;
+    transition: all 0.4s;
+    position: relative;
+    border-radius: 15px;
+
+}
+
+.dataFooter {
+    position: absolute;
+    bottom: 0rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(0 0 0 / 90%) 80%, rgb(51 51 51 / 0%) 100%);
+    gap: 3px;
+    padding: 0 1rem 4rem 1rem;
+}
+
+.dataHero {
+    position: absolute;
+    top: 0rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(0 0 0 / 91%) 20%, rgb(35 35 35 / 0%) 93%);
+    width: 100%;
+    gap: 3px;
+    padding: 0 1rem 4rem 1rem;
+}
+
+.counters {
+    position: absolute;
+    bottom: -8px;
+    right: 1.1rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.carousel img {
+    height: 35rem;
+    width: 20rem;
+    border-radius: 15px;
+}
+
+.btnDiv {
+    display: flex;
+    gap: 28rem;
+    left: -9.1rem;
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 46%;
+}
+
+.statusDiv {
+    flex-grow: 1;
+    padding: 2px 5px;
+    border-radius: 20px;
+
+}
+
+.statusContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    flex-wrap: wrap;
+    position: absolute;
+    gap: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.heartFooter {
+    position: absolute;
+    bottom: .3rem;
+    width: 90%;
+    right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.shareLink {
+    position: absolute;
+    top: 0.8rem;
+    right: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    .carouselContainer {
+        height: 100dvh;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    .carousel img {
+        border-radius: 0;
+        height: 100%;
+        width: 100vw;
+    }
+
+    .container {
+        overflow: hidden;
+        border-radius: 0;
+    }
+
+    .carousel {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .btnDiv {
+        display: none;
+    }
+}
